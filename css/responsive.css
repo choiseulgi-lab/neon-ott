@@ -8,12 +8,6 @@
     padding: 0 var(--space-lg);
   }
 
-  /* 상세 섹션: 포스터 크기 축소 */
-  .detail-inner {
-    grid-template-columns: 220px 1fr;
-    gap: var(--space-xl);
-  }
-
   /* 메타 그리드 2열 */
   .meta-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -82,25 +76,14 @@
     justify-content: center;
   }
 
-  /* 상세 섹션: 세로 스택 */
-  .detail-inner {
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
-  }
-
-  .detail-poster {
-    position: static;
-    max-width: 200px;
-    margin: 0 auto;
+  /* 상세 섹션 모바일 */
+  .detail-wide-poster {
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-xl);
   }
 
   .detail-title {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .detail-tagline {
-    text-align: center;
+    font-size: 22px;
   }
 
   .detail-desc {
