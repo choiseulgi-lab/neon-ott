@@ -4,6 +4,33 @@
   border-top: 1px solid var(--border-subtle);
 }
 
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.section-header .section-title {
+  margin-bottom: 0;
+}
+
+.btn-view-all {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: opacity var(--transition);
+  white-space: nowrap;
+}
+
+.btn-view-all:hover {
+  opacity: 0.75;
+}
+
 .slider-wrapper {
   overflow: hidden;
   position: relative;

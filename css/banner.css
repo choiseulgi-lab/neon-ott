@@ -43,6 +43,16 @@
   overflow: hidden;
 }
 
+.banner-visual-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 .banner-visual--romance {
   background: var(--grad-romance);
 }

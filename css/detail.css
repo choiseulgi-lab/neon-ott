@@ -17,6 +17,16 @@
   top: 88px;
 }
 
+.detail-poster-img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-xl);
+  display: block;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+}
+
 .poster-visual {
   width: 100%;
   aspect-ratio: 2 / 3;
