@@ -46,6 +46,16 @@
   }
 
   /* Hero */
+  .hero-bg {
+    background-position: 70% top;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(to bottom, rgba(6, 13, 10, 0.55) 0%, transparent 20%),
+      linear-gradient(to top, rgba(6, 13, 10, 1) 0%, rgba(6, 13, 10, 0.75) 40%, rgba(6, 13, 10, 0.35) 70%, transparent 100%);
+  }
+
   .hero-content {
     padding: 100px var(--space-md) var(--space-2xl);
     align-items: center;
