@@ -15,16 +15,15 @@
   overflow: hidden;
 }
 
-/* img 태그로 교체 — CSS background보다 선명하게 렌더링 */
+/* 포스터 전체 배경 커버 — 캐릭터 상단 영역 중심 */
 .hero-poster {
   position: absolute;
-  right: 0;
-  top: 0;
+  inset: 0;
+  width: 100%;
   height: 100%;
-  width: auto;
   display: block;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 15%;
   user-select: none;
   pointer-events: none;
 }
@@ -35,14 +34,14 @@
   background:
     radial-gradient(ellipse 55% 65% at 12% 55%, rgba(5, 217, 125, 0.07) 0%, transparent 60%),
     linear-gradient(to right,
-      rgba(6, 13, 10, 1)    0%,
-      rgba(6, 13, 10, 0.97) 25%,
-      rgba(6, 13, 10, 0.8)  45%,
-      rgba(6, 13, 10, 0.3)  70%,
-      rgba(6, 13, 10, 0.05) 100%
+      rgba(6, 13, 10, 0.92) 0%,
+      rgba(6, 13, 10, 0.75) 30%,
+      rgba(6, 13, 10, 0.35) 60%,
+      rgba(6, 13, 10, 0.1)  85%,
+      transparent 100%
     ),
-    linear-gradient(to top, rgba(6, 13, 10, 0.95) 0%, rgba(6, 13, 10, 0.3) 20%, transparent 45%),
-    linear-gradient(to bottom, rgba(6, 13, 10, 0.5) 0%, transparent 15%);
+    linear-gradient(to top, rgba(6, 13, 10, 0.95) 0%, rgba(6, 13, 10, 0.2) 25%, transparent 50%),
+    linear-gradient(to bottom, rgba(6, 13, 10, 0.55) 0%, transparent 18%);
   z-index: 1;
 }
 
