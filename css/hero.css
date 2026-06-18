@@ -10,21 +10,39 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://image.tmdb.org/t/p/original/mvJu1zWa2o7isoWwa5E9TBLR2ab.jpg');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-color: var(--color-bg);
   z-index: 0;
+  overflow: hidden;
+}
+
+/* img 태그로 교체 — CSS background보다 선명하게 렌더링 */
+.hero-poster {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  user-select: none;
+  pointer-events: none;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 70% at 15% 50%, rgba(5, 217, 125, 0.08) 0%, transparent 65%),
-    linear-gradient(to right, rgba(6, 13, 10, 0.88) 38%, rgba(6, 13, 10, 0.3) 65%, rgba(6, 13, 10, 0.15) 100%),
-    linear-gradient(to top, rgba(6, 13, 10, 1) 0%, rgba(6, 13, 10, 0.5) 25%, transparent 50%),
-    linear-gradient(to bottom, rgba(6, 13, 10, 0.6) 0%, transparent 20%);
+    radial-gradient(ellipse 55% 65% at 12% 55%, rgba(5, 217, 125, 0.07) 0%, transparent 60%),
+    linear-gradient(to right,
+      rgba(6, 13, 10, 1)    0%,
+      rgba(6, 13, 10, 0.97) 25%,
+      rgba(6, 13, 10, 0.8)  45%,
+      rgba(6, 13, 10, 0.3)  70%,
+      rgba(6, 13, 10, 0.05) 100%
+    ),
+    linear-gradient(to top, rgba(6, 13, 10, 0.95) 0%, rgba(6, 13, 10, 0.3) 20%, transparent 45%),
+    linear-gradient(to bottom, rgba(6, 13, 10, 0.5) 0%, transparent 15%);
   z-index: 1;
 }
 
