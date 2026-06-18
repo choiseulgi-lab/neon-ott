@@ -1,0 +1,113 @@
+/* ── 상세 소개 섹션 ── */
+.detail-section {
+  padding: var(--space-3xl) 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.detail-inner {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+/* 포스터 */
+.detail-poster {
+  position: sticky;
+  top: 88px;
+}
+
+.poster-visual {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+}
+
+.poster-visual--thriller {
+  background: var(--grad-thriller);
+  position: relative;
+}
+
+.poster-visual--thriller::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 80%, rgba(5, 217, 125, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 50% 20%, rgba(255, 50, 50, 0.1) 0%, transparent 50%);
+}
+
+/* 정보 영역 */
+.detail-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: var(--space-sm);
+  word-break: keep-all;
+}
+
+.detail-tagline {
+  font-size: 16px;
+  color: var(--color-accent);
+  font-weight: 500;
+  margin-bottom: var(--space-lg);
+  font-style: italic;
+}
+
+.detail-desc {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.85;
+  margin-bottom: var(--space-xl);
+  word-break: keep-all;
+}
+
+/* 메타 그리드 */
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.meta-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color var(--transition);
+}
+
+.meta-card:hover {
+  border-color: var(--border-accent);
+}
+
+.meta-card__label {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.meta-card__value {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+  word-break: keep-all;
+}
+
+.meta-card__value--accent {
+  color: var(--color-accent);
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}

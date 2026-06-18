@@ -1,0 +1,90 @@
+/* ── Hero 섹션 ── */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--grad-thriller);
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 70% at 15% 50%, rgba(5, 217, 125, 0.12) 0%, transparent 65%),
+    linear-gradient(to right, rgba(6, 13, 10, 0.9) 40%, transparent 100%),
+    linear-gradient(to top, rgba(6, 13, 10, 0.95) 0%, transparent 40%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px var(--space-xl) var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-lg);
+}
+
+.hero-title {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  word-break: keep-all;
+}
+
+.hero-desc {
+  font-size: clamp(15px, 1.5vw, 17px);
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  max-width: 520px;
+  word-break: keep-all;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs) var(--space-sm);
+}
+
+.hero-meta__item {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.hero-meta__item--rating {
+  color: #ff6b6b;
+  border-color: rgba(255, 107, 107, 0.3);
+}
+
+.hero-meta__item--score {
+  color: var(--color-accent);
+  border-color: var(--border-accent);
+  font-weight: 700;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}

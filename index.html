@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEON — 오징어게임 시즌3</title>
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/detail.css" />
+  <link rel="stylesheet" href="css/banner.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ============================
+       HEADER
+  ============================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="logo">NEON</a>
+
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul class="gnb-list">
+          <li><a href="#" class="gnb-item">영화</a></li>
+          <li><a href="#" class="gnb-item">드라마</a></li>
+          <li><a href="#" class="gnb-item">예능</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-utils">
+        <button class="util-btn" aria-label="검색">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <button class="util-btn" aria-label="프로필">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ============================
+       SECTION 1: HERO
+  ============================= -->
+  <section class="hero-section" aria-label="히어로 섹션">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <span class="badge badge--original">NEON 오리지널</span>
+
+      <h1 class="hero-title">오징어게임 시즌3</h1>
+
+      <p class="hero-desc">
+        마지막 게임이 시작된다. 생존자들의 선택과 새로운 규칙,<br>
+        그리고 밝혀지는 게임의 진실.
+      </p>
+
+      <ul class="hero-meta" aria-label="콘텐츠 정보">
+        <li class="hero-meta__item">스릴러·서바이벌</li>
+        <li class="hero-meta__item">2025</li>
+        <li class="hero-meta__item">6부작</li>
+        <li class="hero-meta__item">NEON 제작</li>
+        <li class="hero-meta__item hero-meta__item--rating">청소년 관람불가</li>
+        <li class="hero-meta__item hero-meta__item--score">★ 9.5</li>
+      </ul>
+
+      <div class="hero-actions">
+        <button class="btn btn--primary">▶ 지금 시청하기</button>
+        <button class="btn btn--ghost">재생목록 추가</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 2: 콘텐츠 상세 소개
+  ============================= -->
+  <section class="detail-section" aria-label="콘텐츠 상세 소개">
+    <div class="container">
+      <div class="detail-inner">
+
+        <div class="detail-poster">
+          <div class="poster-visual poster-visual--thriller" aria-hidden="true"></div>
+        </div>
+
+        <div class="detail-info">
+          <h2 class="detail-title">오징어게임 시즌3</h2>
+          <p class="detail-tagline">"마지막 게임, 마지막 선택"</p>
+
+          <p class="detail-desc">
+            456번의 기억을 안고 다시 돌아온 기훈. 그러나 이번 게임은 단순한 생존이 아니다.
+            새로운 참가자들과 예측 불가능한 규칙, 그리고 게임 뒤에 숨겨진 거대한 음모.
+            살아남는 것이 목적이 아니라, 진실을 밝히는 것이 목적이 된 마지막 게임이 시작된다.
+            당신은 어느 편에 설 것인가.
+          </p>
+
+          <ul class="meta-grid" aria-label="상세 메타정보">
+            <li class="meta-card">
+              <span class="meta-card__label">장르</span>
+              <span class="meta-card__value">스릴러·서바이벌</span>
+            </li>
+            <li class="meta-card">
+              <span class="meta-card__label">공개일</span>
+              <span class="meta-card__value">2025</span>
+            </li>
+            <li class="meta-card">
+              <span class="meta-card__label">에피소드</span>
+              <span class="meta-card__value">6부작</span>
+            </li>
+            <li class="meta-card">
+              <span class="meta-card__label">제작</span>
+              <span class="meta-card__value">NEON</span>
+            </li>
+            <li class="meta-card">
+              <span class="meta-card__label">시청등급</span>
+              <span class="meta-card__value">청소년 관람불가</span>
+            </li>
+            <li class="meta-card">
+              <span class="meta-card__label">평점</span>
+              <span class="meta-card__value meta-card__value--accent">★ 9.5</span>
+            </li>
+          </ul>
+
+          <div class="detail-actions">
+            <button class="btn btn--primary">▶ 지금 시청하기</button>
+            <button class="btn btn--ghost">재생목록 추가</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 3: 강조 콘텐츠 배너
+  ============================= -->
+  <section class="banner-section" aria-label="강조 콘텐츠">
+    <div class="container">
+
+      <!-- 배너 1: 폭싹 속았수다 시즌2 (좌: 비주얼 / 우: 텍스트) -->
+      <article class="banner-card banner-card--normal">
+        <div class="banner-visual banner-visual--romance" aria-hidden="true"></div>
+        <div class="banner-body">
+          <span class="badge badge--original">NEON 오리지널</span>
+          <h3 class="banner-title">폭싹 속았수다</h3>
+          <p class="banner-subtitle">시즌2 확정</p>
+          <p class="banner-desc">
+            제주도의 봄을 담은 그 이야기가 돌아온다.<br>
+            더 깊어진 감동과 웃음, 새로운 계절의 시작.
+          </p>
+          <button class="btn btn--primary">지금 보기</button>
+        </div>
+      </article>
+
+      <!-- 배너 2: 신규 입점 (좌: 텍스트 / 우: 비주얼) — 좌우 반전 -->
+      <article class="banner-card banner-card--reverse">
+        <div class="banner-body">
+          <span class="badge badge--new">NEW</span>
+          <h3 class="banner-title">이번 달 신규 입점</h3>
+          <p class="banner-subtitle">글로벌 히트작 30편 추가</p>
+          <p class="banner-desc">
+            전 세계를 사로잡은 작품들이 NEON에 상륙했다.<br>
+            지금 바로 확인하고 새로운 세계로 빠져들어 보세요.
+          </p>
+          <button class="btn btn--primary">전체 보기</button>
+        </div>
+        <div class="banner-visual banner-visual--global" aria-hidden="true"></div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 4: 이어보기
+  ============================= -->
+  <section class="card-section" aria-label="이어보기">
+    <div class="container">
+      <h2 class="section-title">이어보기</h2>
+
+      <div class="slider-wrapper">
+        <div class="card-track" id="continueTrack">
+
+          <article class="content-card content-card--continue">
+            <div class="card-thumb card-thumb--action" aria-hidden="true"></div>
+            <div class="progress-bar"><div class="progress-bar__fill" style="width: 65%"></div></div>
+            <div class="card-info">
+              <p class="card-title">참교육</p>
+              <button class="btn btn--small">▶ 이어보기</button>
+            </div>
+          </article>
+
+          <article class="content-card content-card--continue">
+            <div class="card-thumb card-thumb--sci-fi" aria-hidden="true"></div>
+            <div class="progress-bar"><div class="progress-bar__fill" style="width: 30%"></div></div>
+            <div class="card-info">
+              <p class="card-title">멋진 신세계</p>
+              <button class="btn btn--small">▶ 이어보기</button>
+            </div>
+          </article>
+
+          <article class="content-card content-card--continue">
+            <div class="card-thumb card-thumb--variety" aria-hidden="true"></div>
+            <div class="progress-bar"><div class="progress-bar__fill" style="width: 80%"></div></div>
+            <div class="card-info">
+              <p class="card-title">유재석 캠프</p>
+              <button class="btn btn--small">▶ 이어보기</button>
+            </div>
+          </article>
+
+          <article class="content-card content-card--continue">
+            <div class="card-thumb card-thumb--romance" aria-hidden="true"></div>
+            <div class="progress-bar"><div class="progress-bar__fill" style="width: 45%"></div></div>
+            <div class="card-info">
+              <p class="card-title">선재 업고 튀어</p>
+              <button class="btn btn--small">▶ 이어보기</button>
+            </div>
+          </article>
+
+          <article class="content-card content-card--continue">
+            <div class="card-thumb card-thumb--thriller" aria-hidden="true"></div>
+            <div class="progress-bar"><div class="progress-bar__fill" style="width: 20%"></div></div>
+            <div class="card-info">
+              <p class="card-title">세계의 주인</p>
+              <button class="btn btn--small">▶ 이어보기</button>
+            </div>
+          </article>
+
+          <article class="content-card content-card--continue">
+            <div class="card-thumb card-thumb--drama" aria-hidden="true"></div>
+            <div class="progress-bar"><div class="progress-bar__fill" style="width: 55%"></div></div>
+            <div class="card-info">
+              <p class="card-title">넘버원</p>
+              <button class="btn btn--small">▶ 이어보기</button>
+            </div>
+          </article>
+
+          <article class="content-card content-card--continue">
+            <div class="card-thumb card-thumb--fantasy" aria-hidden="true"></div>
+            <div class="progress-bar"><div class="progress-bar__fill" style="width: 10%"></div></div>
+            <div class="card-info">
+              <p class="card-title">원더풀스</p>
+              <button class="btn btn--small">▶ 이어보기</button>
+            </div>
+          </article>
+
+          <article class="content-card content-card--continue">
+            <div class="card-thumb card-thumb--horror" aria-hidden="true"></div>
+            <div class="progress-bar"><div class="progress-bar__fill" style="width: 90%"></div></div>
+            <div class="card-info">
+              <p class="card-title">지옥</p>
+              <button class="btn btn--small">▶ 이어보기</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 5: TOP 10
+  ============================= -->
+  <section class="card-section" aria-label="지금 뜨는 콘텐츠 TOP 10">
+    <div class="container">
+      <h2 class="section-title">지금 뜨는 콘텐츠 <span class="title-accent">TOP 10</span></h2>
+
+      <div class="slider-wrapper">
+        <div class="card-track" id="top10Track">
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">1</span>
+            <div class="card-thumb card-thumb--action" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">참교육</p>
+              <p class="card-genre">액션·드라마</p>
+              <p class="card-score">★ 9.5</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">2</span>
+            <div class="card-thumb card-thumb--drama" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">김부장</p>
+              <p class="card-genre">드라마·코미디</p>
+              <p class="card-score">★ 9.2</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">3</span>
+            <div class="card-thumb card-thumb--romance" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">비긴 어게인</p>
+              <p class="card-genre">음악·로맨스</p>
+              <p class="card-score">★ 9.0</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">4</span>
+            <div class="card-thumb card-thumb--thriller" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">세계의 주인</p>
+              <p class="card-genre">스릴러·범죄</p>
+              <p class="card-score">★ 8.9</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">5</span>
+            <div class="card-thumb card-thumb--romance" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">폭싹 속았수다</p>
+              <p class="card-genre">드라마·감동</p>
+              <p class="card-score">★ 8.8</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">6</span>
+            <div class="card-thumb card-thumb--legal" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">소년심판</p>
+              <p class="card-genre">법정·드라마</p>
+              <p class="card-score">★ 8.7</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">7</span>
+            <div class="card-thumb card-thumb--action" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">사냥개들</p>
+              <p class="card-genre">액션·스릴러</p>
+              <p class="card-score">★ 8.6</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">8</span>
+            <div class="card-thumb card-thumb--horror" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">지옥</p>
+              <p class="card-genre">공포·스릴러</p>
+              <p class="card-score">★ 8.5</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">9</span>
+            <div class="card-thumb card-thumb--crime" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">수리남</p>
+              <p class="card-genre">범죄·액션</p>
+              <p class="card-score">★ 8.3</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--top10">
+            <span class="rank-num">10</span>
+            <div class="card-thumb card-thumb--drama" aria-hidden="true"></div>
+            <div class="card-info">
+              <p class="card-title">넘버원</p>
+              <p class="card-genre">드라마</p>
+              <p class="card-score">★ 8.1</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 6: 새로 올라온 콘텐츠
+  ============================= -->
+  <section class="card-section" aria-label="새로 올라온 콘텐츠">
+    <div class="container">
+      <h2 class="section-title">새로 올라온 콘텐츠</h2>
+
+      <div class="slider-wrapper">
+        <div class="card-track" id="newTrack">
+
+          <article class="content-card content-card--new">
+            <div class="card-thumb card-thumb--action" aria-hidden="true">
+              <span class="badge badge--new-sm">NEW</span>
+            </div>
+            <div class="card-info">
+              <p class="card-title">기리고</p>
+              <p class="card-genre">액션·드라마</p>
+              <p class="card-date">2026.06.01</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--new">
+            <div class="card-thumb card-thumb--variety" aria-hidden="true">
+              <span class="badge badge--new-sm">NEW</span>
+            </div>
+            <div class="card-info">
+              <p class="card-title">법륜로드</p>
+              <p class="card-genre">다큐·예능</p>
+              <p class="card-date">2026.06.05</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--new">
+            <div class="card-thumb card-thumb--comedy" aria-hidden="true">
+              <span class="badge badge--new-sm">NEW</span>
+            </div>
+            <div class="card-info">
+              <p class="card-title">오늘도 매진했습니다</p>
+              <p class="card-genre">코미디·드라마</p>
+              <p class="card-date">2026.06.08</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--new">
+            <div class="card-thumb card-thumb--romance" aria-hidden="true">
+              <span class="badge badge--new-sm">NEW</span>
+            </div>
+            <div class="card-info">
+              <p class="card-title">남편들</p>
+              <p class="card-genre">드라마·로맨스</p>
+              <p class="card-date">2026.06.10</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--new">
+            <div class="card-thumb card-thumb--drama" aria-hidden="true">
+              <span class="badge badge--new-sm">NEW</span>
+            </div>
+            <div class="card-info">
+              <p class="card-title">맨 끝줄 소년</p>
+              <p class="card-genre">청춘·드라마</p>
+              <p class="card-date">2026.06.12</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--new">
+            <div class="card-thumb card-thumb--drama" aria-hidden="true">
+              <span class="badge badge--new-sm">NEW</span>
+            </div>
+            <div class="card-info">
+              <p class="card-title">넘버원</p>
+              <p class="card-genre">드라마</p>
+              <p class="card-date">2026.06.14</p>
+            </div>
+          </article>
+
+          <article class="content-card content-card--new">
+            <div class="card-thumb card-thumb--fantasy" aria-hidden="true">
+              <span class="badge badge--new-sm">NEW</span>
+            </div>
+            <div class="card-info">
+              <p class="card-title">중간계</p>
+              <p class="card-genre">판타지·모험</p>
+              <p class="card-date">2026.06.18</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-logo">NEON</p>
+
+      <nav class="footer-nav" aria-label="푸터 메뉴">
+        <a href="#">회사소개</a>
+        <a href="#">고객센터</a>
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+      </nav>
+
+      <p class="footer-copy">© 2026 NEON. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+:root {
+  /* ── 브랜드 컬러 ── */
+  --color-bg:          #060d0a;
+  --color-accent:      #05D97D;
+  --color-accent-dim:  rgba(5, 217, 125, 0.15);
+  --color-accent-glow: rgba(5, 217, 125, 0.35);
+  --color-text:        #F0FFF7;
+  --color-text-secondary: rgba(240, 255, 247, 0.65);
+  --color-text-tertiary:  rgba(240, 255, 247, 0.4);
+
+  /* ── 서피스 ── */
+  --bg-surface:    rgba(255, 255, 255, 0.04);
+  --bg-surface-md: rgba(255, 255, 255, 0.07);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(5, 217, 125, 0.3);
+
+  /* ── 타이포그래피 ── */
+  --font-base: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* ── 간격 ── */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+
+  /* ── 라운드 ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* ── 전환 ── */
+  --transition: 0.25s ease;
+
+  /* ── 장르 그라디언트 팔레트 ── */
+  --grad-thriller: linear-gradient(135deg, #0a0a0a 0%, #1a0505 40%, #3d0000 100%);
+  --grad-romance:  linear-gradient(135deg, #0d0a14 0%, #1e0a2e 40%, #3d1a5e 100%);
+  --grad-action:   linear-gradient(135deg, #0a0d08 0%, #0d2010 40%, #0f4020 100%);
+  --grad-sci-fi:   linear-gradient(135deg, #050a14 0%, #0a1a30 40%, #0d2a50 100%);
+  --grad-variety:  linear-gradient(135deg, #14100a 0%, #2e1e05 40%, #5e3a00 100%);
+  --grad-horror:   linear-gradient(135deg, #0a050a 0%, #1a0520 40%, #2d0040 100%);
+  --grad-fantasy:  linear-gradient(135deg, #050d14 0%, #05202e 40%, #05405e 100%);
+  --grad-drama:    linear-gradient(135deg, #0a0d10 0%, #141e2e 40%, #1e3050 100%);
+  --grad-legal:    linear-gradient(135deg, #0a0a08 0%, #1a1a10 40%, #303020 100%);
+  --grad-crime:    linear-gradient(135deg, #0d0805 0%, #201005 40%, #3d1e00 100%);
+  --grad-comedy:   linear-gradient(135deg, #0d0a05 0%, #201a05 40%, #3d3000 100%);
+  --grad-global:   linear-gradient(135deg, #050d0a 0%, #052018 40%, #054030 100%);
+}

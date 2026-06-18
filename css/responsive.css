@@ -1,0 +1,161 @@
+/* ── 태블릿: 768~1199px ── */
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 var(--space-lg);
+  }
+
+  .header-inner {
+    padding: 0 var(--space-lg);
+  }
+
+  /* 상세 섹션: 포스터 크기 축소 */
+  .detail-inner {
+    grid-template-columns: 220px 1fr;
+    gap: var(--space-xl);
+  }
+
+  /* 메타 그리드 2열 */
+  .meta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 카드: 태블릿 3개 노출 */
+  .content-card {
+    flex: 0 0 calc((100% - var(--space-md) * 2) / 3);
+  }
+
+  /* 배너 */
+  .banner-card {
+    min-height: 280px;
+  }
+}
+
+/* ── 모바일: ~767px ── */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .header-inner {
+    padding: 0 var(--space-md);
+  }
+
+  /* GNB 숨김 처리 (모바일에서 공간 절약) */
+  .gnb {
+    display: none;
+  }
+
+  /* Hero */
+  .hero-content {
+    padding: 100px var(--space-md) var(--space-2xl);
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-desc {
+    max-width: 100%;
+  }
+
+  .hero-meta {
+    justify-content: center;
+  }
+
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 상세 섹션: 세로 스택 */
+  .detail-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .detail-poster {
+    position: static;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .detail-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .detail-tagline {
+    text-align: center;
+  }
+
+  .detail-desc {
+    font-size: 14px;
+  }
+
+  .meta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail-actions {
+    flex-direction: column;
+  }
+
+  .detail-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 배너: 세로 스택 */
+  .banner-card {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+
+  .banner-card--reverse {
+    direction: ltr;
+  }
+
+  .banner-visual {
+    min-height: 180px;
+  }
+
+  .banner-body {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  /* 카드: 모바일 2개 노출 */
+  .content-card {
+    flex: 0 0 calc((100% - var(--space-md)) / 2);
+    min-width: 130px;
+  }
+
+  .rank-num {
+    font-size: 28px;
+  }
+
+  /* 섹션 패딩 축소 */
+  .card-section,
+  .detail-section,
+  .banner-section {
+    padding: var(--space-xl) 0;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  /* 푸터 */
+  .footer-nav {
+    gap: var(--space-sm) var(--space-lg);
+  }
+}
+
+/* ── 대형 데스크탑: 1200px+ ── */
+@media (min-width: 1200px) {
+  .content-card {
+    flex: 0 0 calc((100% - var(--space-md) * 4) / 5);
+  }
+}
